@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commissions List</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Caveat:wght@700&family=Ramabhadra&family=Righteous&family=Shrikhand&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Caveat:wght@700&family=Open+Sans:wght@400;700&family=Ramabhadra&family=Righteous&family=Shrikhand&display=swap"
+        rel="stylesheet">
+</head>
+
+<!--container for content-->
+
+<body class="container">
+    <br><br><br>
+
+    <!--container for 'header box'-->
+    <div class="container-fluid el-centered padding-extra shell-pink">
+        <h2>Commissions List</h2>
+    </div>
+    <br><br>
+
+    <!--card 'container' for TODO list, buttons, forms-->
+    <div class="card">
+        <div class="card-body dusty-pink">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-start-date" class="text-deco">Began Work</label>
+                        <input type="date" class="form-control" id="new-start-date">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-end-date" class="text-deco">Deadline</label>
+                        <input type="date" class="form-control" id="new-end-date">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!--note: added input-group to align 'add' button to the align the button to the description form-->
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="new-commission"
+                                placeholder="Commission description">
+                            <button id="add"> + </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+
+            <!--table where the inputted information will be formatted and listed-->
+            <table id="list" class="table">
+                <tr class="thead-danger">
+                    <th>Commission Description</th>
+                    <th>Date Created</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Actions</th>
+                </tr>
+            </table>
+        </div>
+
+        <!--js scripts to be run, placed at end for optimal functionality-->
+        <script src="todo.js"></script>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
